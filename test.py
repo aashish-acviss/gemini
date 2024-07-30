@@ -15,7 +15,7 @@ import requests
 import requests
 
 API_URL = "https://api-inference.huggingface.co/models/facebook/bart-large-cnn"
-headers = {"Authorization": "Bearer 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"}
+headers = {"Authorization": "API_KEY"}
 
 def query(payload):
     response = requests.post(API_URL, headers=headers, json=payload)
